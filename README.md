@@ -82,7 +82,7 @@ GameDay/                      # Solution folder
 ├── GameDay.AppHost/          # .NET Aspire orchestration project
 ├── GameDay.ServiceDefaults/  # Shared Aspire service configurations
 ├── GameDay.Web/              # Blazor Server UI (Panelist & Leader interfaces)
-├── GameDay.Api/              # ASP.NET Core Web API (Session & data management)
+├── GameDay.ApiService/       # ASP.NET Core Web API (Session & data management)
 ├── GameDay.Core/             # Domain models and business logic
 ├── GameDay.Infrastructure/   # Data access, SignalR hubs, RabbitMQ
 ├── GameDay.Plugins/          # Plugin system and extensions
@@ -217,7 +217,7 @@ dotnet run --project GameDay/GameDay.AppHost
 
 # Run specific service independently
 dotnet run --project GameDay/GameDay.Web
-dotnet run --project GameDay/GameDay.Api
+dotnet run --project GameDay/GameDay.ApiService
 ```
 
 ### Production Deployment
